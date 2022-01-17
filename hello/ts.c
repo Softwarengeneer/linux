@@ -16,13 +16,6 @@
 #include "exported_ts.h"
 #include "exported_inode.h"
 
-SYSCALL_DEFINE0(get_ts0)
-{
-	printk(KERN_INFO "get_ts0 called\\n");
-	return 0;
-}
-
-
 SYSCALL_DEFINE2(get_ts, int, pid, struct exp_thread_struct*, ts)
 {
 	printk(KERN_INFO "get_ts called\n");
